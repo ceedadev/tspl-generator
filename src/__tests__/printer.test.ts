@@ -1,10 +1,4 @@
-import {
-  TSPLPrinter,
-  MeasurementSystem,
-  Font,
-  BarcodeType,
-  Rotation,
-} from "../";
+import { TSPLPrinter, Font, BarcodeType } from "../";
 
 describe("TSPLPrinter", () => {
   let printer: TSPLPrinter;
