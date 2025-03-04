@@ -1,5 +1,3 @@
-import { Rotation } from "../types";
-
 /**
  * Generate BITMAP command for printing bitmap images
  * @param x - X coordinate
