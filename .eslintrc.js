@@ -5,9 +5,8 @@ module.exports = {
   parserOptions: {
     ecmaVersion: 2020,
     sourceType: "module",
-    project: "./tsconfig.json",
+    project: "./tsconfig.eslint.json",
     tsconfigRootDir: __dirname,
-    createDefaultProgram: true,
   },
   env: {
     node: true,
@@ -23,15 +22,4 @@ module.exports = {
     ],
   },
   ignorePatterns: ["dist/", "node_modules/"],
-  overrides: [
-    {
-      files: ["**/*.test.ts"],
-      parserOptions: {
-        project: "./tsconfig.json",
-      },
-      rules: {
-        "@typescript-eslint/no-explicit-any": "off",
-      },
-    },
-  ],
 };
