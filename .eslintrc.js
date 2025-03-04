@@ -6,13 +6,32 @@ module.exports = {
     ecmaVersion: 2020,
     sourceType: "module",
     project: "./tsconfig.json",
+    tsconfigRootDir: __dirname,
+    createDefaultProgram: true,
   },
   env: {
     node: true,
     jest: true,
   },
   rules: {
-    // Add any custom rules here
+    "@typescript-eslint/no-unused-vars": [
+      "error",
+      {
+        argsIgnorePattern: "^_",
+        varsIgnorePattern: "^_",
+      },
+    ],
   },
   ignorePatterns: ["dist/", "node_modules/"],
+  overrides: [
+    {
+      files: ["**/*.test.ts"],
+      parserOptions: {
+        project: "./tsconfig.json",
+      },
+      rules: {
+        "@typescript-eslint/no-explicit-any": "off",
+      },
+    },
+  ],
 };
