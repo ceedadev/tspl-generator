@@ -1,5 +1,7 @@
 # TSPL Generator
 
+![CI/CD](https://github.com/ceedadev/tspl-generator/actions/workflows/ci.yml/badge.svg)
+
 A TypeScript library for generating TSPL (Taiwan Semiconductor Printer Language) / TSPL2 commands for thermal label printers.
 
 ## Installation
@@ -14,7 +16,7 @@ npm install tspl-generator
 
 For direct browser usage, you can download the latest browser bundle from:
 
-- [GitHub Releases](https://github.com/YOUR_USERNAME/tspl-generator/releases)
+- [GitHub Releases](https://github.com/ceedadev/tspl-generator/releases)
 
 ## Features
 
