@@ -1,6 +1,6 @@
 {
   "name": "tspl-generator",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A TypeScript library for generating TSPL/TSPL2 commands for thermal label printers",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
